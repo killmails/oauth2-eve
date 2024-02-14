@@ -1,0 +1,31 @@
+{
+    "name": "killmails/oauth2-eve",
+    "description": "EVE Online OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oizys",
+            "email": "oziys@killmails.com",
+            "homepage": "https://killmails.com"
+        }
+    ],
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "client",
+        "authorization",
+        "authentication",
+        "eve",
+        "eve-online"
+    ],
+    "require": {
+        "php": "^8.2",
+        "league/oauth2-client": "^2.4",
+        "firebase/php-jwt": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Killmails\\OAuth2\\Client\\": "src/"
+        }
+    }
+}
