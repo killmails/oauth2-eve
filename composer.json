@@ -23,9 +23,21 @@
         "league/oauth2-client": "^2.4",
         "firebase/php-jwt": "^6.9"
     },
+    "require-dev": {
+        "strobotti/php-jwk": "^1.4",
+        "pestphp/pest": "^2.33"
+    },
     "autoload": {
         "psr-4": {
             "Killmails\\OAuth2\\Client\\": "src/"
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest"
     }
 }

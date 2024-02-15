@@ -12,7 +12,7 @@ class EveOnlineResourceOwner implements ResourceOwnerInterface
         // no-op
     }
 
-    public function getId(): string
+    public function getId(): int
     {
         return (int) substr($this->response['sub'], 14);
     }
