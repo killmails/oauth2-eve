@@ -3,7 +3,7 @@
 [![GitHub Source](https://img.shields.io/badge/source-killmails%2Foauth2--eve-blue?style=flat-square)](https://github.com/killmails/oauth2-eve)
 [![GitHub Release](https://img.shields.io/github/v/release/killmails/oauth2-eve?style=flat-square)](https://github.com/killmails/oauth2-eve/releases)
 [![GitHub License](https://img.shields.io/github/license/killmails/oauth2-eve?style=flat-square)](LICENSE.md)
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/killmails/oauth2-eve/ci?style=flat-square)](https://github.com/killmails/oauth2-eve/actions/workflows/ci.yaml)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/killmails/oauth2-eve/ci.yaml?style=flat-square)](https://github.com/killmails/oauth2-eve/actions)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/killmails/oauth2-eve?style=flat-square)](https://packagist.org/packages/killmails/oauth2-eve)
 
 This package provides EVE Online OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
