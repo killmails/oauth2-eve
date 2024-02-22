@@ -38,7 +38,7 @@ class EveOnline extends AbstractProvider
         // no-op
     }
 
-    protected function createResourceOwner(array $response, AccessToken $token)
+    protected function createResourceOwner(array $response, AccessToken $token): EveOnlineResourceOwner
     {
         $jwt = JWT::decode($token, JWK::parseKeySet($response));
 

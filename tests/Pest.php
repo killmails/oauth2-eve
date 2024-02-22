@@ -20,7 +20,7 @@ function provider(): EveOnline
 function resourceOwner(int|string $id = 123456): EveOnlineResourceOwner
 {
     return new EveOnlineResourceOwner([
-        'sub' => 'CHARACTER:EVE:' . (string) $id,
+        'sub' => 'CHARACTER:EVE:' . $id,
         'name' => 'mock_name',
         'owner' => 'mock_owner',
     ]);
