@@ -33,6 +33,11 @@ class EveOnline extends AbstractProvider
         return [];
     }
 
+    protected function getScopeSeparator(): string
+    {
+        return ' ';
+    }
+
     protected function checkResponse(ResponseInterface $response, $data): void
     {
         // no-op
