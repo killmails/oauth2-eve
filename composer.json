@@ -19,7 +19,7 @@
     "eve-online"
   ],
   "require": {
-    "php": "^8.4",
+    "php": "^8.3",
     "league/oauth2-client": "^2.9",
     "firebase/php-jwt": "^6.10.2",
     "pestphp/pest": "^4.1.4"
