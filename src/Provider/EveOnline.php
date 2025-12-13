@@ -15,17 +15,17 @@ class EveOnline extends AbstractProvider
 
     public function getBaseAuthorizationUrl(): string
     {
-        return 'https://login.eveonline.com/v2/oauth/authorize';
+        return "https://login.eveonline.com/v2/oauth/authorize";
     }
 
     public function getBaseAccessTokenUrl(array $params): string
     {
-        return 'https://login.eveonline.com/v2/oauth/token';
+        return "https://login.eveonline.com/v2/oauth/token";
     }
 
     public function getResourceOwnerDetailsUrl(AccessToken $token): string
     {
-        return 'https://login.eveonline.com/oauth/jwks';
+        return "https://login.eveonline.com/oauth/jwks";
     }
 
     protected function getDefaultScopes(): array
@@ -35,22 +35,21 @@ class EveOnline extends AbstractProvider
 
     protected function getScopeSeparator(): string
     {
-        return ' ';
+        return " ";
     }
 
-    protected function checkResponse(ResponseInterface $response, $data): void
-    {
-        // no-op
-    }
+    protected function checkResponse(ResponseInterface $response, $data): void {}
 
-    protected function createResourceOwner(array $response, AccessToken $token): EveOnlineResourceOwner
-    {
+    protected function createResourceOwner(
+        array $response,
+        AccessToken $token,
+    ): EveOnlineResourceOwner {
         $jwt = JWT::decode($token, JWK::parseKeySet($response));
 
         return new EveOnlineResourceOwner([
-            'sub' => $jwt->sub,
-            'name' => $jwt->name,
-            'owner' => $jwt->owner,
+            "sub" => $jwt->sub,
+            "name" => $jwt->name,
+            "owner" => $jwt->owner,
         ]);
     }
 }
