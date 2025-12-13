@@ -1,43 +1,43 @@
 {
-    "name": "killmails/oauth2-eve",
-    "description": "EVE Online OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Oizys",
-            "email": "oziys@killmails.com",
-            "homepage": "https://killmails.com"
-        }
-    ],
-    "keywords": [
-        "oauth",
-        "oauth2",
-        "client",
-        "authorization",
-        "authentication",
-        "eve",
-        "eve-online"
-    ],
-    "require": {
-        "php": "^8.2",
-        "league/oauth2-client": "^2.9",
-        "firebase/php-jwt": "^6.10.2",
-        "pestphp/pest": "^4.1.4"
-    },
-    "require-dev": {
-        "strobotti/php-jwk": "^1.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "Killmails\\OAuth2\\Client\\": "src/"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "pestphp/pest-plugin": true
-        }
-    },
-    "scripts": {
-        "test": "pest"
+  "name": "killmails/oauth2-eve",
+  "description": "EVE Online OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Oizys",
+      "email": "oziys@killmails.com",
+      "homepage": "https://killmails.com"
     }
+  ],
+  "keywords": [
+    "oauth",
+    "oauth2",
+    "client",
+    "authorization",
+    "authentication",
+    "eve",
+    "eve-online"
+  ],
+  "require": {
+    "php": "^8.4",
+    "league/oauth2-client": "^2.9",
+    "firebase/php-jwt": "^6.10.2",
+    "pestphp/pest": "^4.1.4"
+  },
+  "require-dev": {
+    "strobotti/php-jwk": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Killmails\\OAuth2\\Client\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "scripts": {
+    "test": "pest"
+  }
 }
