@@ -78,7 +78,7 @@ test("get resource owner details", function (): void {
 
     $jwks = [
         "keys" => [
-            new KeyFactory()->createFromPem($public, [
+            (new KeyFactory())->createFromPem($public, [
                 "use" => "sig",
                 "alg" => $alg,
                 "kid" => $kid,
